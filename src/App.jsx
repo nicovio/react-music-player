@@ -9,7 +9,7 @@ import { getAnimationPercentaje } from './util'
 
 function App() {
   const audioRef = useRef(null)
-  const [songs, setSongs] = useState(getData())
+  const [songs] = useState(getData())
   const [currentSong, setCurrentSong] = useState(songs[0])
   const [isPlaying, setIsPlaying] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
